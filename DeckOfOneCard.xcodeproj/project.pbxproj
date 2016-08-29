@@ -12,6 +12,10 @@
 		FAB59F751D748C4D00D4E687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB59F731D748C4D00D4E687 /* Main.storyboard */; };
 		FAB59F771D748C4D00D4E687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB59F761D748C4D00D4E687 /* Assets.xcassets */; };
 		FAB59F7A1D748C4D00D4E687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB59F781D748C4D00D4E687 /* LaunchScreen.storyboard */; };
+		FAB59F821D74909F00D4E687 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB59F811D74909F00D4E687 /* Card.swift */; };
+		FAB59F841D74963700D4E687 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB59F831D74963700D4E687 /* CardController.swift */; };
+		FAB59F861D74964D00D4E687 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB59F851D74964D00D4E687 /* NetworkController.swift */; };
+		FAB59F881D74967C00D4E687 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB59F871D74967C00D4E687 /* ImageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		FAB59F761D748C4D00D4E687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB59F791D748C4D00D4E687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB59F7B1D748C4D00D4E687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB59F811D74909F00D4E687 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FAB59F831D74963700D4E687 /* CardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		FAB59F851D74964D00D4E687 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		FAB59F871D74967C00D4E687 /* ImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 			children = (
 				FAB59F6F1D748C4D00D4E687 /* AppDelegate.swift */,
 				FAB59F711D748C4D00D4E687 /* ViewController.swift */,
+				FAB59F811D74909F00D4E687 /* Card.swift */,
+				FAB59F831D74963700D4E687 /* CardController.swift */,
+				FAB59F851D74964D00D4E687 /* NetworkController.swift */,
+				FAB59F871D74967C00D4E687 /* ImageController.swift */,
 				FAB59F731D748C4D00D4E687 /* Main.storyboard */,
 				FAB59F761D748C4D00D4E687 /* Assets.xcassets */,
 				FAB59F781D748C4D00D4E687 /* LaunchScreen.storyboard */,
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB59F861D74964D00D4E687 /* NetworkController.swift in Sources */,
 				FAB59F721D748C4D00D4E687 /* ViewController.swift in Sources */,
+				FAB59F841D74963700D4E687 /* CardController.swift in Sources */,
+				FAB59F821D74909F00D4E687 /* Card.swift in Sources */,
 				FAB59F701D748C4D00D4E687 /* AppDelegate.swift in Sources */,
+				FAB59F881D74967C00D4E687 /* ImageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

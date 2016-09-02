@@ -10,5 +10,15 @@ import Foundation
 import UIKit
 class ImageController {
     
- 
+    static func downloadImage(imageString: String, completion: (image: UIImage?) -> Void){
+        let url = NSURL(string: imageString)!
+        
+        NetworkController.performRequestForURL(url, httpMethod: .Get) { (data, error) in
+            guard let data = data,
+                let image = UIImage(data: data) else { completion(image: nil); return}
+            
+            completion(image: image)
+        }
+        
+    }
 }

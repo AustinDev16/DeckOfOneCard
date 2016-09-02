@@ -12,6 +12,15 @@ class CardController {
     
     static let baseURL = NSURL(string: "http://deckofcardsapi.com/api/deck/new/draw/")
     
+    func fetchCard(numberOfCards: Int, completion: (card: [Card]) -> Void){
+        
+        NetworkController.performRequestForURL(CardController.baseURL!, httpMethod: .Get, urlParameters: ["count":"\(numberOfCards)"]) { (data, error) in
+            guard let data = data,
+            let jsonDictionary = (try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)) as? [String:AnyObject] else { completion(card: []); return}
+            
+        }
+        
+    }
     
 
     

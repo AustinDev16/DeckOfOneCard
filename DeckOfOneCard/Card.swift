@@ -19,5 +19,15 @@ class Card {
     let value: String
     let imageString: String
     
+    init?(dictionary: [String: AnyObject]){
+        guard let suit = dictionary[kSuit] as? String,
+            let value = dictionary[kValue] as? String,
+            let imageString = dictionary[kImageString] as? String else { return nil }
+        
+        self.suit = suit
+        self.value = value
+        self.imageString = imageString
+    }
+    
  
 }

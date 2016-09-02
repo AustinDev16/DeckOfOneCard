@@ -16,27 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CardController.drawCards(1) { (cards) in
-            
-        }
-        
     }
 
     // MARK: - Actions
     
     @IBAction func drawACardButtonTapped(sender: AnyObject) {
         
-        CardController.drawCards(1) { (cards) in
-            guard let card = cards.first else {return}
-            
-            ImageController.imageForURL(card.imageString, completion: { (image) in
-                self.cardImageView.image = image
-                    self.cardLabel.text = "\(card.value) of \(card.suit)"
-            })
-            
-            
-            
-        }
         
     }
  
